@@ -52,6 +52,11 @@ class Song
 
     artist_name = info[0]
     name = info[1].split(".mp3")[0]
+    song = self.new
+    song.name = name
+    song.artist_name = artist_name
+    song.save
+    song
   end
   
   def self.create_from_filename
@@ -65,6 +70,6 @@ end
 
 filename = "Taylor Swift - Blank Space.mp3"
 song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
-binding.pry
+
 puts song.name
 puts song.artist_name
