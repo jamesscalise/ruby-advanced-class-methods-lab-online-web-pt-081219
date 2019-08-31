@@ -47,8 +47,8 @@ class Song
   
   def self.new_from_filename(file_Name)
     info = file_name.split(" - ")
-    artist = info[0]
-    artists = info[1].split(".mp3")[0]
+    artist_name = info[0]
+    name = info[1].split(".mp3")[0]
   end
   
   def self.create_from_filename
@@ -60,4 +60,6 @@ class Song
   
 end
 
-filename = 
+filename = "Taylor Swift - Blank Space.mp3"
+song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
+puts song.
