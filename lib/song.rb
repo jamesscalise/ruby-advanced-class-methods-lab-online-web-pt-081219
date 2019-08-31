@@ -46,7 +46,7 @@ class Song
   end
   
   def self.new_from_filename(file_Name)
-    
+    title = 
   end
   
   def self.create_from_filename
